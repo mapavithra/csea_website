@@ -1,0 +1,30 @@
+body {
+    padding-top: 20px;
+}
+/* Style for home page */
+.home-container {
+    height: 100vh;
+    background-image: url('../images/csedept.jpeg'); /* Direct relative path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-box {
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.welcome-box h1 {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.welcome-box p {
+    color: white;
+    font-size: 1.2rem;
+}

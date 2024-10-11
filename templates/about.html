@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block content %}
+<style>
+    body {
+        background-color: #f8f9fa; /* Light background color */
+        color: #343a40; /* Dark text color */
+    }
+
+    .about-container {
+        max-width: 800px; /* Limit width for better readability */
+        margin: 40px auto; /* Center the container */
+        padding: 20px;
+        background-color: #ffffff; /* White background for content */
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Large heading size */
+        margin-bottom: 20px; /* Space below the heading */
+        text-align: center; /* Center the heading */
+        color: #007bff; /* Bootstrap primary color */
+    }
+    body {
+        background-color: #8ba5bf; /* Light grey background color */
+        color: #343a40; /* Dark text color */
+    }
+    p {
+        font-size: 1.2rem; /* Font size for paragraphs */
+        line-height: 1.6; /* Increased line height for readability */
+        margin-bottom: 15px; /* Space between paragraphs */
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 2rem; /* Smaller heading size on mobile */
+        }
+
+        p {
+            font-size: 1rem; /* Smaller font size on mobile */
+        }
+    }
+</style>
+
+<div class="about-container">
+    <h1>About CSEA Association</h1>
+    <p>
+        The Computer Science Engineering Association (CSEA) is a student-led organization dedicated to promoting the academic and professional development of students in the field of Computer Science and Engineering.
+    </p>
+    <p>
+        Our mission is to foster a collaborative environment where students can engage in technical projects, workshops, competitions, and social activities to enhance their skills and network with professionals in the industry.
+    </p>
+    <p>
+        We organize regular events such as hackathons, coding challenges, guest lectures, and industrial visits to keep our members updated with the latest trends and technologies in the field of computer science.
+    </p>
+</div>
+{% endblock %}

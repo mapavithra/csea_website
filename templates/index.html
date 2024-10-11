@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block content %}
+<style>
+    /* Make the background image cover the entire screen */
+    .home-container {
+        height: 100vh; /* Full viewport height */
+        background-image: url('/static/images/csedept.jpeg'); /* Direct relative path */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed; /* Keeps the background in place while scrolling */
+        display: flex;
+        justify-content: center; /* Center content horizontally */
+        align-items: flex-start; /* Align content at the top */
+        padding-top: 70px; /* Adjust padding based on the height of your navbar */
+    }
+
+    .welcome-box {
+        background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        width: 80%; /* Adjust the width to your preference */
+        max-width: 600px; /* Set a max width */
+        margin-top: 20px; /* Space between the navbar and the welcome box */
+    }
+
+    .welcome-box h1 {
+        color: white;
+        font-size: 2.5rem;
+        margin: 0; /* Remove default margin */
+    }
+
+    .welcome-box p {
+        color: white;
+        font-size: 1.2rem;
+        margin: 0; /* Remove default margin */
+        max-height: 2.4em; /* Limit to 2 lines */
+        overflow: hidden; /* Hide overflow */
+        text-overflow: ellipsis; /* Show ellipsis for overflow */
+        line-height: 1.2; /* Set line height */
+    }
+</style>
+
+<div class="home-container">
+    <div class="welcome-box">
+        <h1>Welcome to the CSEA Association</h1>
+        <p>Stay updated with the latest events and announcements of the Computer Science Engineering Association.</p>
+    </div>
+</div>
+{% endblock %}

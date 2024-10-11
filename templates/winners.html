@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block content %}
+<style>
+    body {
+        background-color: #f8f9fa; /* Light grey background */
+        color: #343a40; /* Dark text color */
+    }
+
+    .winners-container {
+        max-width: 800px; /* Limit width for better readability */
+        margin: 40px auto; /* Center the container */
+        padding: 20px;
+        text-align: center; /* Center text */
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Large heading size */
+        margin-bottom: 30px; /* Space below the heading */
+        color: #007bff; /* Bootstrap primary color */
+    }
+
+    .winner-card {
+        background-color: #ffffff; /* White background for winner cards */
+        border: 1px solid #007bff; /* Border color */
+        border-radius: 8px; /* Rounded corners */
+        padding: 20px; /* Space inside the card */
+        margin-bottom: 20px; /* Space between winner cards */
+        transition: transform 0.2s; /* Smooth transition for hover effect */
+    }
+
+    .winner-card:hover {
+        transform: scale(1.02); /* Slightly enlarge card on hover */
+    }
+
+    .winner-name {
+        font-size: 1.5rem; /* Size for the winner's name */
+        font-weight: bold; /* Bold font for names */
+        color: #007bff; /* Bootstrap primary color */
+    }
+
+    .winner-event {
+        font-size: 1.2rem; /* Size for the event name */
+        color: #6c757d; /* Muted color for details */
+    }
+
+    .winner-position {
+        font-size: 1rem; /* Size for the position */
+        color: #6c757d; /* Muted color for details */
+    }
+</style>
+
+<div class="winners-container">
+    <h1>Winners Announcement 🏆</h1>
+
+    <div class="winner-card">
+        <div class="winner-name">Akshaya D K</div>
+        <div class="winner-event">Event: Debug at First Sight</div>
+        <div class="winner-position">Position: 1</div>
+    </div>
+
+    <div class="winner-card">
+        <div class="winner-name">Vijayaram V</div>
+        <div class="winner-event">Event: Debug at First Sight</div>
+        <div class="winner-position">Position: 2</div>
+    </div>
+
+    <div class="winner-card">
+        <div class="winner-name">Rasika K S</div>
+        <div class="winner-event">Event: Debug at First Sight</div>
+        <div class="winner-position">Position: 3</div>
+    </div>
+</div>
+{% endblock %}
